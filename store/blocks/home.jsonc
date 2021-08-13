@@ -13,7 +13,55 @@
         "props": {
             "width": "60%"
         },
-        "children": ["slider-layout-group"]
+        "children": ["tab-layout#home"]
+    },
+    "tab-layout#home": {
+        "children": ["tab-list#home", "tab-content#home"]
+    },
+    "tab-list#home": {
+        "props": {
+            "blockClass": "home",
+            "defaultActiveTabId": "home-1"
+        },
+        "children": ["tab-list.item#home-1", "tab-list.item#home-2"]
+    },
+    "tab-list.item#home-1": {
+        "props": {
+            "tabId": "home-1",
+            "label": "Promoção",
+            "defaultActiveTab": true
+        }
+    },
+    "tab-list.item#home-2": {
+        "props": {
+            "tabId": "home-2",
+            "label": "Corinthians"
+        }
+    },
+    "tab-content#home": {
+        "children": ["tab-content.item#home-1", "tab-content.item#home-2"]
+    },
+    "tab-content.item#home-1": {
+        "children": ["slider-layout-group", "rich-text#home-1"],
+        "props": {
+            "tabId": "home-1"
+        }
+    },
+    "tab-content.item#home-2": {
+        "children": ["slider-layout-group", "rich-text#home-2"],
+        "props": {
+            "tabId": "home-2"
+        }
+    },
+    "rich-text#home-1": {
+        "props": {
+            "text": "Promoção"
+        }
+    },
+    "rich-text#home-2": {
+        "props": {
+            "text": "Corinthians"
+        }
     },
     "slider-layout-group": {
         "children": ["slider-layout#images", "slider-layout#controls"]
