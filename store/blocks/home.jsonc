@@ -1,0 +1,75 @@
+{
+    "store.home": {
+        "blocks": ["flex-layout.row"]
+    },
+    "flex-layout.row": {
+        "props": {
+            "fullWidth": false,
+            "horizontalAlign": "center"
+        },
+        "children": ["flex-layout.col"]
+    },
+    "flex-layout.col": {
+        "props": {
+            "width": "60%"
+        },
+        "children": ["slider-layout-group"]
+    },
+    "slider-layout-group": {
+        "children": ["slider-layout#images", "slider-layout#controls"]
+    },
+    "slider-layout#images": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true,
+
+            "showNavigationArrows": "never",
+            "showPaginationDots": "never",
+            "blockClass": "carousel"
+        },
+        "children": ["image#wood-sport", "image#grandes-guerreiros"]
+    },
+    "image#wood-sport": {
+        "props": {
+            "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf",
+            "maxWidth": "100%"
+        }
+    },
+    "image#grandes-guerreiros": {
+        "props": {
+            "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e",
+            "maxWidth": "100%"
+        }
+    },
+    "slider-layout#controls": {
+        "props": {
+            "autoplay": {
+                "timeout": 7000,
+                "stopOnHover": true
+            },
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "desktopOnly",
+            "blockClass": "carousel"
+        },
+        "children": ["rich-text#1", "rich-text#2"]
+    },
+    "rich-text#1": {
+        "props": {
+            "text": "\n"
+        }
+    },
+    "rich-text#2": {
+        "props": {
+            "text": "\n"
+        }
+    }
+}
