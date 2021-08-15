@@ -1,0 +1,8 @@
+/* .sliderFrame {
+    transform: translate3d(0, 0px, 0px);
+    width: 100% !important;
+} */
+
+.slide {
+    width: 20vw !important;
+}

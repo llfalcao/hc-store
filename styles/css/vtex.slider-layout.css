@@ -1,0 +1,47 @@
+/* Banners */
+
+.sliderLayoutContainer {
+    width: 65vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        'a a'
+        'b c';
+    justify-content: center;
+    row-gap: 2rem;
+}
+.sliderTrackContainer--carousel {
+    /* width: 65vw; */
+    grid-area: a;
+}
+
+.sliderTrack--carousel {
+    width: max-content;
+}
+
+.sliderChildrenContainer--carousel {
+}
+
+.slide--carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide--carousel--firstVisible {
+}
+
+.sliderLeftArrow {
+    position: static;
+    grid-area: b;
+    justify-self: left;
+    /* margin-left: 20vw; */
+}
+.sliderRightArrow {
+    position: static;
+    grid-area: c;
+    justify-self: right;
+    /* margin-right: 20vw; */
+}

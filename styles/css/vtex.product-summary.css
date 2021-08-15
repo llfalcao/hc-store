@@ -1,0 +1,13 @@
+.imageNormal {
+    max-height: 10rem;
+}
+
+.imageStackContainer {
+    height: 10rem;
+    display: flex;
+    align-items: center;
+}
+
+.nameContainer {
+    padding-bottom: 0;
+}

@@ -1,29 +1,43 @@
 {
     "store.home": {
-        "blocks": ["flex-layout.row"]
+        "blocks": ["tab-layout#home"]
     },
     "flex-layout.row": {
         "props": {
-            "fullWidth": false,
-            "horizontalAlign": "center"
+            "fullWidth": true
         },
         "children": ["flex-layout.col"]
     },
     "flex-layout.col": {
         "props": {
-            "width": "60%"
+            "width": "100%"
         },
         "children": ["tab-layout#home"]
     },
     "tab-layout#home": {
-        "children": ["tab-list#home", "tab-content#home"]
+        "children": [
+            "tab-list#home",
+            "slider-layout#images",
+            "tab-content#home"
+        ]
     },
     "tab-list#home": {
         "props": {
             "blockClass": "home",
             "defaultActiveTabId": "home-1"
         },
-        "children": ["tab-list.item#home-1", "tab-list.item#home-2"]
+        "children": [
+            "tab-list.item#home-1",
+            "tab-list.item#home-2",
+            "tab-list.item#home-3",
+            "tab-list.item#home-4",
+            "tab-list.item#home-5",
+            "tab-list.item#home-6",
+            "tab-list.item#home-7",
+            "tab-list.item#home-8",
+            "tab-list.item#home-9",
+            "tab-list.item#home-10"
+        ]
     },
     "tab-list.item#home-1": {
         "props": {
@@ -38,33 +52,53 @@
             "label": "Corinthians"
         }
     },
-    "tab-content#home": {
-        "children": ["tab-content.item#home-1", "tab-content.item#home-2"]
-    },
-    "tab-content.item#home-1": {
-        "children": ["slider-layout-group", "rich-text#home-1"],
+    "tab-list.item#home-3": {
         "props": {
-            "tabId": "home-1"
+            "tabId": "home-3",
+            "label": "Palmeiras"
         }
     },
-    "tab-content.item#home-2": {
-        "children": ["slider-layout-group", "rich-text#home-2"],
+    "tab-list.item#home-4": {
         "props": {
-            "tabId": "home-2"
+            "tabId": "home-4",
+            "label": "Signos"
         }
     },
-    "rich-text#home-1": {
+    "tab-list.item#home-5": {
         "props": {
-            "text": "Promoção"
+            "tabId": "home-5",
+            "label": "Divertidos"
         }
     },
-    "rich-text#home-2": {
+    "tab-list.item#home-6": {
         "props": {
-            "text": "Corinthians"
+            "tabId": "home-6",
+            "label": "7 Maravilhas"
         }
     },
-    "slider-layout-group": {
-        "children": ["slider-layout#images", "slider-layout#controls"]
+    "tab-list.item#home-7": {
+        "props": {
+            "tabId": "home-7",
+            "label": "Guerreiros"
+        }
+    },
+    "tab-list.item#home-8": {
+        "props": {
+            "tabId": "home-8",
+            "label": "Álbum 1"
+        }
+    },
+    "tab-list.item#home-9": {
+        "props": {
+            "tabId": "home-9",
+            "label": "Álbum 2"
+        }
+    },
+    "tab-list.item#home-10": {
+        "props": {
+            "tabId": "home-10",
+            "label": "Álbum 3"
+        }
     },
     "slider-layout#images": {
         "props": {
@@ -75,8 +109,8 @@
             },
             "infinite": true,
 
-            "showNavigationArrows": "never",
-            "showPaginationDots": "never",
+            "showNavigationArrows": "always",
+            "showPaginationDots": "always",
             "blockClass": "carousel"
         },
         "children": ["image#wood-sport", "image#grandes-guerreiros"]
@@ -84,40 +118,190 @@
     "image#wood-sport": {
         "props": {
             "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf",
-            "maxWidth": "100%"
+            "maxWidth": "100%",
+            "blockClass": "banner"
         }
     },
     "image#grandes-guerreiros": {
         "props": {
             "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e",
-            "maxWidth": "100%"
+            "maxWidth": "100%",
+            "blockClass": "banner"
         }
     },
     "slider-layout#controls": {
         "props": {
-            "autoplay": {
-                "timeout": 7000,
-                "stopOnHover": true
-            },
+            // "autoplay": {
+            //     "timeout": 7000,
+            //     "stopOnHover": true
+            // },
             "itemsPerPage": {
                 "desktop": 1,
                 "tablet": 1,
                 "phone": 1
             },
             "infinite": true,
-            "showNavigationArrows": "desktopOnly",
+            // "showNavigationArrows": "desktopOnly",
             "blockClass": "carousel"
         },
-        "children": ["rich-text#1", "rich-text#2"]
+        "children": ["rich-text#img-1", "rich-text#img-2"]
     },
-    "rich-text#1": {
+    "rich-text#img-1": {
         "props": {
-            "text": "\n"
+            "text": "a"
         }
     },
-    "rich-text#2": {
+    "rich-text#img-2": {
         "props": {
-            "text": "\n"
+            "text": "b"
         }
+    },
+    "tab-content#home": {
+        "children": [
+            "tab-content.item#home-1",
+            "tab-content.item#home-2",
+            "tab-content.item#home-3",
+            "tab-content.item#home-4",
+            "tab-content.item#home-5",
+            "tab-content.item#home-6",
+            "tab-content.item#home-7",
+            "tab-content.item#home-8",
+            "tab-content.item#home-9",
+            "tab-content.item#home-10"
+        ]
+    },
+    "tab-content.item#home-1": {
+        "children": ["shelf"],
+        "props": {
+            "tabId": "home-1"
+        }
+    },
+    "tab-content.item#home-2": {
+        "children": ["slider-layout-group"],
+        "props": {
+            "tabId": "home-2"
+        }
+    },
+    "tab-content.item#home-3": {
+        "children": ["slider-layout-group"],
+        "props": {
+            "tabId": "home-3"
+        }
+    },
+    "tab-content.item#home-4": {
+        "children": ["slider-layout-group"],
+        "props": {
+            "tabId": "home-4"
+        }
+    },
+    "tab-content.item#home-5": {
+        "children": ["slider-layout-group"],
+        "props": {
+            "tabId": "home-5"
+        }
+    },
+    "tab-content.item#home-6": {
+        "children": ["slider-layout-group"],
+        "props": {
+            "tabId": "home-6"
+        }
+    },
+    "tab-content.item#home-7": {
+        "children": ["slider-layout-group"],
+        "props": {
+            "tabId": "home-7"
+        }
+    },
+    "tab-content.item#home-8": {
+        "children": ["slider-layout-group"],
+        "props": {
+            "tabId": "home-8"
+        }
+    },
+    "tab-content.item#home-9": {
+        "children": ["slider-layout-group"],
+        "props": {
+            "tabId": "home-9"
+        }
+    },
+    "tab-content.item#home-10": {
+        "children": ["slider-layout-group"],
+        "props": {
+            "tabId": "home-10"
+        }
+    },
+
+    // test 1
+
+    "shelf": {
+        "props": {
+            "maxItems": 8
+        },
+        "blocks": ["product-summary.shelf"]
+    },
+    "product-summary.shelf": {
+        "props": {
+            "blockClass": "grid"
+        },
+        "children": [
+            "stack-layout",
+            "product-summary-image",
+            "product-summary-space",
+            "product-summary-name",
+            "product-summary-price",
+            "product-summary-buy-button"
+        ]
     }
+
+    // test2
+
+    // "list-context.product-list": {
+
+    //     "blocks": ["product-summary.shelf"],
+    //     "children": ["slider-layout"]
+    // },
+    // "product-summary.shelf": {
+    //     "children": [
+    //         "modal-trigger#quickview",
+    //         "product-summary-add-to-list-button",
+    //         "product-summary-name",
+    //         "product-summary-price"
+    //     ]
+    // },
+    // "modal-trigger#quickview": {
+    //     "children": ["product-summary-image", "modal-layout#quickview"]
+    // },
+    // "modal-layout#quickview": {
+    //     "children": [
+    //         "product-summary-name",
+    //         "product-images",
+    //         "product-summary-sku-selector",
+    //         "product-summary-quantity",
+    //         "add-to-cart-button"
+    //     ]
+    // }
+
+    // test3
+
+    // "list-context.product-list": {
+    //     "props": {
+    //         "maxItems": 2,
+    //         "blockClass": "grid"
+    //     },
+    //     "blocks": ["product-summary.shelf"],
+    //     "children": ["slider-layout"]
+    // },
+    // "product-summary.shelf": {
+    //     "props": {
+    //         "blockClass": "item"
+    //     },
+    //     "children": [
+    //         "product-summary-image",
+    //         "product-summary-name",
+    //         "product-rating-inline",
+    //         "product-summary-space",
+    //         "product-summary-price",
+    //         "product-summary-buy-button"
+    //     ]
+    // }
 }

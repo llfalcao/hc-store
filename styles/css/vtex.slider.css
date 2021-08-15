@@ -1,0 +1,9 @@
+.sliderFrame {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    justify-content: center;
+    column-gap: 5rem;
+    row-gap: 2rem;
+    width: 100% !important;
+    transform: translate3d(0, 0px, 0px) !important;
+}
