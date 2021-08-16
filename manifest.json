@@ -3,7 +3,7 @@
   "name": "basicblocks",
   "version": "0.1.1",
   "title": "HC Desafio #3",
-  "description": "Site baseado no UpMedia",
+  "description": "Modelo baseado no site UpMedia",
   "builders": {
     "styles": "2.x",
     "store": "0.x",

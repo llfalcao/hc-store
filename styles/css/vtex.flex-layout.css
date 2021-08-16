@@ -1,0 +1,9 @@
+/* .flexRowContent {
+    background-color: #212121; 
+}*/
+
+.flexRow {
+    background: #212121;
+    height: min-content !important;
+    padding: 0;
+}

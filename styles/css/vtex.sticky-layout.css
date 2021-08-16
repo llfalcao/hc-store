@@ -1,0 +1,5 @@
+.wrapper--sticky-header {
+    padding: 10px 24px;
+    height: min-content !important;
+    background: #212121;
+}

@@ -11,3 +11,13 @@
 .nameContainer {
     padding-bottom: 0;
 }
+
+.brandName,
+.listPriceContainer,
+.sellingPriceContainer {
+    color: #ffffff;
+}
+
+.currencyContainer {
+    color: #59ff00;
+}

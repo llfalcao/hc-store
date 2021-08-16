@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Container do Tab Layout */
+.container {
+    background-color: #303030;
+}
+
+.listContainer--home {
+    background-color: #212121;
+    overflow: hidden;
+    height: min-content;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2),
+        0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+/* Container dos botões da lista */
+.listItem {
+    margin-bottom: 0;
+    transition: 0.5s;
+}
+
+.listItem:active {
+    background-color: #5e5e5e;
+    transition: 0.5s;
+}
+
+.listItemActive {
+    border-bottom: 2px solid #59ff00;
+}
+
+.listItemActive:active {
+    background-color: #59ff0050;
+    transition: 0.5s;
+}
+
+/* Botões da lista */
+.listItem :global(.vtex-button) {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    border-radius: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 6px 12px;
+}
+
+.listItemActive :global(.vtex-button) {
+    color: #59ff00;
+}
+
+@keyframes gray-to-green {
+    0% {
+        background-color: #5e5e5e;
+    }
+    50% {
+        background-color: #59ff00;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
