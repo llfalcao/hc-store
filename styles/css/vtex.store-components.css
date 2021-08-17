@@ -11,3 +11,13 @@
 .logoImage {
     padding: 0;
 }
+
+.productNameContainer {
+    color: #ffffff;
+}
+
+.discountInsideContainer {
+    color: #3c3c3c;
+    font-weight: 600;
+    font-size: 1rem;
+}

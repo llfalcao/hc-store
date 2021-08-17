@@ -1,11 +1,52 @@
-.imageNormal {
-    max-height: 10rem;
+.container {
+    background-color: #424242;
+    max-width: 350px !important;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
-.imageStackContainer {
-    height: 10rem;
+.element {
+    padding-top: 0;
+}
+
+.nameContainer {
+    justify-content: left;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.productNameContainer {
+    height: 100px;
+    padding: 16px;
     display: flex;
     align-items: center;
+}
+
+.brandName {
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.discountContainer {
+    width: 100%;
+}
+
+.imageContainer {
+    width: 100%;
+    height: 350px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageNormal {
+    border-radius: 0;
+    min-height: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .nameContainer {
@@ -20,4 +61,36 @@
 
 .currencyContainer {
     color: #59ff00;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.buyButtonContainer {
+    display: flex;
+    align-self: center;
+    width: 80%;
+}
+
+.buyButton :global(.vtex-button) {
+    background-color: #59ff00;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.buyButton :global(.vtex-button):hover {
+    background-color: #3eb200;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.buyButtonText {
+    color: #3c3c3c;
 }

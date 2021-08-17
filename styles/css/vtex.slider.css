@@ -1,9 +1,13 @@
 .sliderFrame {
     display: grid;
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, 480px);
     justify-content: center;
-    column-gap: 5rem;
-    row-gap: 2rem;
+    /* column-gap: 5rem; */
+    row-gap: 1rem;
     width: 100% !important;
     transform: translate3d(0, 0px, 0px) !important;
+}
+
+.dotsContainer {
+    display: none;
 }

@@ -1,3 +1,11 @@
+.sliderContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .slide {
-    width: 20vw !important;
+    width: 100% !important;
+    margin: 0;
+    padding: 1rem 0;
 }

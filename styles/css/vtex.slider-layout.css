@@ -9,10 +9,11 @@
     grid-template-areas:
         'a a'
         'b c';
-    justify-content: center;
+    justify-items: center;
     row-gap: 2rem;
     background-color: #303030;
 }
+
 .sliderTrackContainer--carousel {
     grid-area: a;
 }

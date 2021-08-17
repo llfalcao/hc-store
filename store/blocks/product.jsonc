@@ -7,7 +7,7 @@
     },
     "flex-layout.row#product-breadcrumb": {
         "props": {
-            "marginTop": 10
+            "marginTop": 1
         },
         "children": ["breadcrumb"]
     },
@@ -15,7 +15,7 @@
         "props": {
             "colGap": 9,
             "rowGap": 7,
-            "marginTop": 4,
+            "marginTop": 0,
             "marginBottom": 7,
             "paddingTop": 7,
             "paddingBottom": 7,
