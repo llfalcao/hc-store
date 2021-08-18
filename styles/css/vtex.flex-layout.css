@@ -17,7 +17,7 @@
 }
 
 .flexRow--product-main {
-    margin: 0 5rem;
+    margin: 0 2%;
 }
 
 .flexRowContent--product-main {
@@ -31,6 +31,30 @@
 
 .flexRowContent--product-main .stretchChildrenWidth:last-child {
     width: 30% !important;
+}
+
+@media (max-width: 1000px) {
+}
+
+@media (max-width: 1000px) {
+    .flexRowContent--product-main {
+        flex-direction: column;
+    }
+
+    .flexRow--product-main .stretchChildrenWidth {
+        padding-right: 0;
+        padding-bottom: 1rem;
+    }
+
+    .flexRow--product-main .stretchChildrenWidth {
+        width: fit-content !important;
+        max-width: 100%;
+        transition: 0.5s;
+    }
+
+    .flexRowContent--product-main .stretchChildrenWidth:last-child {
+        width: 100% !important;
+    }
 }
 
 .flexRowContent--buyButton .stretchChildrenWidth {
