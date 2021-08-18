@@ -1,11 +1,17 @@
 .sliderFrame {
     display: grid;
-    grid-template-columns: repeat(2, 480px);
+    grid-template-columns: repeat(1, 90%);
     justify-content: center;
     /* column-gap: 5rem; */
     row-gap: 1rem;
     width: 100% !important;
     transform: translate3d(0, 0px, 0px) !important;
+}
+
+@media (min-width: 860px) {
+    .sliderFrame {
+        grid-template-columns: repeat(2, 480px);
+    }
 }
 
 .dotsContainer {

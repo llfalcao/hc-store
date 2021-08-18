@@ -16,6 +16,10 @@
     color: #ffffff;
 }
 
+.discountContainer {
+    width: 100%;
+}
+
 .discountInsideContainer {
     color: #3c3c3c;
     font-weight: 600;

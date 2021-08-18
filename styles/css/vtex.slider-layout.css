@@ -10,8 +10,15 @@
         'a a'
         'b c';
     justify-items: center;
-    row-gap: 2rem;
+    row-gap: 0.5rem;
     background-color: #303030;
+}
+
+@media (max-width: 800px) {
+    .sliderLayoutContainer {
+        width: 80vw;
+        transition: 0.3s;
+    }
 }
 
 .sliderTrackContainer--carousel {
@@ -28,13 +35,36 @@
     align-items: center;
 }
 
-.sliderLeftArrow {
+.sliderLeftArrow--carousel {
     position: static;
     grid-area: b;
     justify-self: left;
 }
-.sliderRightArrow {
+.sliderRightArrow--carousel {
     position: static;
     grid-area: c;
     justify-self: right;
+}
+
+.caretIcon--carousel {
+    width: 12px;
+    height: 12px;
+    padding: 0.5rem 1.5rem;
+}
+
+.sliderArrows {
+    color: #ffffff;
+}
+
+.sliderArrows--carousel:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 4px;
+}
+
+.paginationDotsContainer {
+    margin-bottom: 1.5rem;
+    height: 0;
 }

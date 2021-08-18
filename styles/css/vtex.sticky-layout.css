@@ -3,3 +3,7 @@
     height: min-content !important;
     background: #212121;
 }
+
+.container--sticky-header {
+    background: #212121;
+}

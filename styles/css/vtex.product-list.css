@@ -1,0 +1,13 @@
+.price {
+    color: #59ff00;
+}
+
+.productName {
+    font-weight: 400;
+    color: #59ff00;
+    text-transform: uppercase;
+}
+
+.unitPrice {
+    color: #ffffff;
+}
