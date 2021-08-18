@@ -12,12 +12,13 @@
     justify-items: center;
     row-gap: 0.5rem;
     background-color: #303030;
+    transition: 0.3s;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1008px) {
     .sliderLayoutContainer {
-        width: 80vw;
-        transition: 0.3s;
+        width: 90vw;
+        transition: 0.5s;
     }
 }
 
