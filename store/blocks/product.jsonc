@@ -53,7 +53,8 @@
     "flex-layout.row#buy-button": {
         "props": {
             "marginTop": 4,
-            "marginBottom": 7
+            "marginBottom": 7,
+            "blockClass": "buyButton"
         },
         "children": ["buy-button"]
     },

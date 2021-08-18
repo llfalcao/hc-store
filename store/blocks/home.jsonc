@@ -1,6 +1,6 @@
 {
     "store.home": {
-        "blocks": ["tab-layout#home"]
+        "blocks": ["tab-layout#home", "rich-text#a"]
     },
     "flex-layout.row": {
         "props": {
@@ -184,5 +184,10 @@
             "product-summary-price",
             "product-summary-buy-button"
         ]
+    },
+    "rich-text#a": {
+        "props": {
+            "text": "a"
+        }
     }
 }

@@ -25,3 +25,26 @@
     font-weight: 600;
     font-size: 1rem;
 }
+
+.productImagesContainer {
+    background-color: #424242;
+    /* background-color: #1e1e1e62; */
+    padding: 1rem 1rem;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+}
+
+.sellingPrice {
+    color: #59ff00;
+}
+
+.shippingContainer :global(.vtex-address-form__field--small) {
+    padding-bottom: 1rem;
+}
+
+.shareContainer {
+    padding-top: 0.5rem;
+}

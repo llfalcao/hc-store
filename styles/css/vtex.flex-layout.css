@@ -15,3 +15,24 @@
 .flexRowContent--main-header-mobile {
     background-color: #212121;
 }
+
+.flexRow--product-main {
+    margin: 0 5rem;
+}
+
+.flexRowContent--product-main {
+    justify-content: center;
+}
+
+.flexRow--product-main .stretchChildrenWidth {
+    width: max-content !important;
+    max-width: 50%;
+}
+
+.flexRowContent--product-main .stretchChildrenWidth:last-child {
+    width: 30% !important;
+}
+
+.flexRowContent--buyButton .stretchChildrenWidth {
+    min-width: 100%;
+}
