@@ -38,6 +38,14 @@
     border-radius: 0;
 }
 
+.searchBarInnerContainer--search-bar :global(.vtex-input__suffix) {
+    background-color: transparent;
+}
+
+.searchIcon--search-bar {
+    color: #ffffff;
+}
+
 /* Dropdown com resultados da pesquisa */
 
 .resultsList--search-bar {
