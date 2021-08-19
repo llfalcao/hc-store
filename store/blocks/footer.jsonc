@@ -13,7 +13,7 @@
     },
     "flex-layout.row#footer": {
         "props": {
-            "blockClass": "footerContainer",
+            "blockClass": "footer-container",
             "horizontalAlign": "center"
         },
         "children": [
@@ -25,7 +25,7 @@
     },
     "flex-layout.col#login": {
         "props": {
-            "blockClass": "footerElement"
+            "blockClass": "footer-element"
         },
         "children": ["image#login", "rich-text#login"]
     },
@@ -35,7 +35,7 @@
             "title": "Entrar",
             "maxWidth": "24px",
             "link": { "url": "#" },
-            "blockClass": "footerImage"
+            "blockClass": "footer-image"
         }
     },
     "rich-text#login": {
@@ -43,13 +43,13 @@
             "text": "[ENTRAR](#)",
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "blockClass": "footerText"
+            "blockClass": "footer-text"
         }
     },
 
     "flex-layout.col#desafios": {
         "props": {
-            "blockClass": "footerElement"
+            "blockClass": "footer-element"
         },
         "children": ["image#desafios", "rich-text#desafios"]
     },
@@ -58,22 +58,22 @@
             "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='MuiSvgIcon-root' focusable='false' viewBox='0 0 24 24' aria-hidden='true'%3E%3Cpath d='M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM7 10.82C5.84 10.4 5 9.3 5 8V7h2v3.82zM19 8c0 1.3-.84 2.4-2 2.82V7h2v1z'%3E%3C/path%3E%3C/svg%3E",
             "title": "Desafios",
             "maxWidth": "24px",
-            "link": { "url": "#" },
-            "blockClass": "footerImage"
+            "link": { "url": "/" },
+            "blockClass": "footer-image"
         }
     },
     "rich-text#desafios": {
         "props": {
-            "text": "[DESAFIOS](#)",
+            "text": "[DESAFIOS](/)",
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "blockClass": "footerText"
+            "blockClass": "footer-text"
         }
     },
 
     "flex-layout.col#loja": {
         "props": {
-            "blockClass": "footerElement"
+            "blockClass": "footer-element"
         },
         "children": ["image#loja", "rich-text#loja"]
     },
@@ -83,7 +83,7 @@
             "title": "Loja",
             "maxWidth": "24px",
             "link": { "url": "/" },
-            "blockClass": "footerImage"
+            "blockClass": "footer-image"
         }
     },
     "rich-text#loja": {
@@ -91,13 +91,13 @@
             "text": "[LOJA](/)",
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "blockClass": "footerText"
+            "blockClass": "footer-text"
         }
     },
 
     "flex-layout.col#suporte": {
         "props": {
-            "blockClass": "footerElement"
+            "blockClass": "footer-element"
         },
         "children": ["image#suporte", "rich-text#suporte"]
     },
@@ -109,7 +109,7 @@
             "link": {
                 "url": "https://api.whatsapp.com/send?phone=55123456789"
             },
-            "blockClass": "footerImage"
+            "blockClass": "footer-image"
         }
     },
     "rich-text#suporte": {
@@ -117,7 +117,7 @@
             "text": "[SUPORTE](https://api.whatsapp.com/send?phone=55123456789)",
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "blockClass": "footerText"
+            "blockClass": "footer-text"
         }
     }
 }

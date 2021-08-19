@@ -33,7 +33,7 @@
     "flex-layout.col#logo-desktop": {
         "props": {
             "verticalAlign": "middle",
-            "blockClass": "logoContainer"
+            "blockClass": "logo-container"
         },
         "children": ["logo"]
     },
@@ -50,7 +50,7 @@
             "width": "grow",
             "autocompleteAlignment": "HorizontalAlignment",
             "placeholder": "BUSCAR",
-            "blockClass": "searchBar"
+            "blockClass": "search-bar"
         }
     },
     "flex-layout.col#spacer": {
@@ -72,7 +72,7 @@
             "minicart.v2"
         ],
         "props": {
-            "blockClass": "mainHeaderMobile",
+            "blockClass": "main-header-mobile",
             "preventHorizontalStretch": true,
             "preserveLayoutOnMobile": true,
             "fullWidth": true
@@ -82,7 +82,7 @@
         "props": {
             "horizontalAlign": "left",
             "verticalAlign": "middle",
-            "blockClass": "logoContainerMobile"
+            "blockClass": "logo-container-mobile"
         },
         "children": ["logo#mobile"]
     },
@@ -144,7 +144,7 @@
             "paddingTop": "5",
             "colSizing": "auto",
             "preserveLayoutOnMobile": "true",
-            "blockClass": "minicartItem"
+            "blockClass": "minicart-item"
         }
     },
     "flex-layout.col#image.mobile": {

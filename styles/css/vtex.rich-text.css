@@ -1,10 +1,10 @@
-.wrapper--footerText .paragraph {
+.wrapper--footer-text .paragraph {
     margin: 0;
     font-size: 0.875rem;
     font-weight: 500;
 }
 
-.link--footerText {
+.link--footer-text {
     color: #ffffff;
     text-decoration: none;
 }

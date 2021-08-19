@@ -32,7 +32,7 @@
 
 /* Barra de pesquisa */
 
-.autoCompleteOuterContainer--searchBar :global(.vtex-input-prefix__group) {
+.autoCompleteOuterContainer--search-bar :global(.vtex-input-prefix__group) {
     border: transparent;
     border-bottom: 1px solid #bdbdbd;
     border-radius: 0;
@@ -40,7 +40,7 @@
 
 /* Dropdown com resultados da pesquisa */
 
-.resultsList--searchBar {
+.resultsList--search-bar {
     border: 1px solid #212121;
     border-top: transparent;
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
@@ -95,6 +95,6 @@
 }
 
 /* Inverter a cor dos ícones do rodapé */
-.imageElement--footerImage {
+.imageElement--footer-image {
     filter: invert(1);
 }

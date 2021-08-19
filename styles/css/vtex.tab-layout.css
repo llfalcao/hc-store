@@ -4,6 +4,8 @@
 }
 
 .listContainer--home {
+    justify-content: left;
+    padding-left: 2rem;
     background-color: #212121;
     overflow: hidden;
     height: min-content;
