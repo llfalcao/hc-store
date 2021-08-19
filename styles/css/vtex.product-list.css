@@ -1,11 +1,13 @@
-.price {
-    color: #59ff00;
-}
+/* Texto dos itens do carrinho */
 
 .productName {
     font-weight: 400;
     color: #59ff00;
     text-transform: uppercase;
+}
+
+.price {
+    color: #59ff00;
 }
 
 .unitPrice {

@@ -1,4 +1,5 @@
+/* Cor de fundo da página ao clicar no carrinho */
+
 .overlay {
-    background: #3eb2003a;
     background: rgba(0, 0, 0, 0.6);
 }

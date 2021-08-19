@@ -23,7 +23,6 @@
             "flex-layout.col#suporte"
         ]
     },
-
     "flex-layout.col#login": {
         "props": {
             "blockClass": "footerElement"
@@ -121,11 +120,4 @@
             "blockClass": "footerText"
         }
     }
-
-    // "image#logo": {
-    //     "props": {
-    //         "width": 100,
-    //         "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png"
-    //     }
-    // }
 }

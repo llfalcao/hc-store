@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-
-/* Container do Tab Layout */
+/* Container do Tab Layout na homepage */
 .container {
     background-color: #303030;
 }
@@ -43,7 +41,6 @@
     color: #ffffff;
     border: none;
     border-radius: 0;
-    font-family: 'Montserrat', sans-serif;
     font-size: 0.875rem;
     font-weight: 500;
     padding: 6px 12px;
@@ -51,13 +48,4 @@
 
 .listItemActive :global(.vtex-button) {
     color: #59ff00;
-}
-
-@keyframes gray-to-green {
-    0% {
-        background-color: #212121;
-    }
-    100% {
-        background-color: #5e5e5e;
-    }
 }

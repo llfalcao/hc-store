@@ -1,14 +1,13 @@
+/* Cabeçalho fixo */
+
 .wrapper--sticky-header {
     padding: 10px 24px;
     height: 90px !important;
     background: #212121;
 }
 
-.container--sticky-header {
-    background: #212121;
-}
-
 .wrapper--sticky-header--stuck .container--sticky-header {
     height: 90px;
     padding: 10px 24px;
+    background: #212121;
 }

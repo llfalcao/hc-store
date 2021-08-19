@@ -1,19 +1,11 @@
 {
     "store.home": {
+        // Tab layout para alternar entre as categorias de produtos
+        // Newsletter para ofertas
+        // Footer fixo com links de login, seções da loja e suporte
         "blocks": ["tab-layout#home", "newsletter", "footer"]
     },
-    "flex-layout.row": {
-        "props": {
-            "fullWidth": true
-        },
-        "children": ["flex-layout.col"]
-    },
-    "flex-layout.col": {
-        "props": {
-            "width": "100%"
-        },
-        "children": ["tab-layout#home"]
-    },
+
     "tab-layout#home": {
         "children": [
             "tab-list#home",
@@ -165,11 +157,13 @@
         }
     },
 
+    // Shelf para exibição de produtos na homepage;
+    // Por algum motivo o limite de itens não tem funcionado da forma esperada
+    // (a menos que se troque o valor para 5 ou menos)
     "shelf": {
         "props": {
             "maxItems": 8,
-            "arrows": false,
-            "blockClass": "grid"
+            "arrows": false
         },
         "blocks": ["product-summary.shelf"]
     },

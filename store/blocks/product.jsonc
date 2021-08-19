@@ -35,7 +35,6 @@
             "rowGap": 0
         },
         "children": [
-            // "product-name",
             "vtex.store-components:product-name",
             "product-price#product-details",
             "sku-selector",
@@ -43,6 +42,11 @@
             "shipping-simulator",
             "share#default"
         ]
+    },
+    "vtex.store-components:product-name": {
+        "props": {
+            "blockClass": "product-page"
+        }
     },
     "product-price#product-details": {
         "props": {

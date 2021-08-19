@@ -1,3 +1,8 @@
+/* Slider Layout de produtos na homepage
+ * Convertido em grid para se assemelhar ao
+ * modelo original da UpMedal
+ */
+
 .sliderFrame {
     display: grid;
     grid-template-columns: repeat(1, 90%);
