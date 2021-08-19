@@ -1,3 +1,12 @@
+.flexCol--logoContainer {
+    width: 30vw;
+    padding: 0 !important;
+}
+
+.flexColChild--logoContainerMobile {
+    width: 30vw;
+}
+
 .flexRowContent--minicartItem {
     /* display: flex;
     justify-content: center; */

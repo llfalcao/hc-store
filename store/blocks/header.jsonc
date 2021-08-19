@@ -24,29 +24,38 @@
         },
         "children": [
             "flex-layout.col#logo-desktop",
-            "flex-layout.col#spacer",
             "search-bar",
+            "flex-layout.col#spacer",
             "login",
             "minicart.v2"
         ]
+    },
+    "flex-layout.col#logo-desktop": {
+        "props": {
+            "verticalAlign": "middle",
+            "blockClass": "logoContainer"
+        },
+        "children": ["logo"]
+    },
+    "search-bar": {
+        "props": {
+            "width": "grow",
+            "autocompleteAlignment": "HorizontalAlignment",
+            "placeholder": "BUSCAR",
+            "blockClass": "searchBar"
+        }
     },
     "flex-layout.col#spacer": {
         "props": {
             "width": "grow"
         }
     },
-    "flex-layout.col#logo-desktop": {
-        "props": {
-            "verticalAlign": "middle"
-        },
-        "children": ["logo"]
-    },
     "logo": {
         "props": {
             "title": "Logo",
             "href": "/",
             "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
-            "width": "25%"
+            "width": "90%"
         }
     },
     "header-layout.mobile": {
@@ -58,9 +67,7 @@
     "flex-layout.row#mobile": {
         "children": [
             "flex-layout.col#logo-mobile",
-            // "flex-layout.col#spacer",
             "search-bar",
-            "login",
             "minicart.v2"
         ],
         "props": {
@@ -72,7 +79,9 @@
     },
     "flex-layout.col#logo-mobile": {
         "props": {
-            "verticalAlign": "middle"
+            "horizontalAlign": "left",
+            "verticalAlign": "middle",
+            "blockClass": "logoContainerMobile"
         },
         "children": ["logo#mobile"]
     },
@@ -81,7 +90,7 @@
             "title": "Logo",
             "href": "/",
             "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
-            "width": "25%"
+            "width": "100%"
         }
     },
     "minicart.v2": {
