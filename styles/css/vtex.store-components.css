@@ -49,3 +49,7 @@
 .shareContainer {
     padding-top: 0.5rem;
 }
+
+.imageElement--footerImage {
+    filter: invert(1);
+}
