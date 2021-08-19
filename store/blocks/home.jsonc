@@ -1,6 +1,6 @@
 {
     "store.home": {
-        "blocks": ["tab-layout#home", "footer"]
+        "blocks": ["tab-layout#home", "newsletter", "footer"]
     },
     "flex-layout.row": {
         "props": {

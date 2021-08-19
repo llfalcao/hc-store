@@ -53,3 +53,8 @@
 .imageElement--footerImage {
     filter: invert(1);
 }
+
+/* Newsletter */
+.label {
+    color: #ffffff;
+}
