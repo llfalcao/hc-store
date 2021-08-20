@@ -9,10 +9,6 @@
     padding: 0 3rem 3rem;
 }
 
-.galleryItem .discountContainer {
-    aspect-ratio: 1;
-}
-
 .galleryItem .imageNormal {
     object-fit: cover !important;
 }
