@@ -1,14 +1,39 @@
-/* Search results */
+/* Resultados da pesquisa em geral */
 
 .orderBy--layout {
     padding: 0 2rem;
 }
 
+.container--layout {
+    align-items: center;
+}
+
 .gallery {
-    max-width: 100vw;
+    max-width: 95vw;
     padding: 0 3rem 3rem;
 }
 
 .galleryItem .imageNormal {
     object-fit: cover !important;
+}
+
+/* Container de produtos da homepage */
+
+.galleryItem--gallery-desktop--two {
+    max-width: 450px !important;
+}
+
+.gallery--gallery-desktop {
+    display: grid;
+    grid-template-columns: repeat(1, 90%);
+    justify-items: center;
+    row-gap: 1rem;
+    width: 100% !important;
+    transform: translate3d(0, 0px, 0px) !important;
+}
+
+@media (min-width: 860px) {
+    .gallery--gallery-desktop {
+        grid-template-columns: repeat(2, 480px);
+    }
 }
