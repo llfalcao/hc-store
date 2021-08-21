@@ -42,7 +42,7 @@
             "title": "Logo",
             "href": "/",
             "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
-            "width": "90%"
+            "width": "40%"
         }
     },
     "search-bar": {
@@ -91,7 +91,8 @@
             "title": "Logo",
             "href": "/",
             "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
-            "width": "100%"
+            "width": "100%",
+            "blockClass": "logo-mobile"
         }
     },
     "minicart.v2": {

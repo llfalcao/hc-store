@@ -30,6 +30,13 @@
     padding: 0;
 }
 
+.logoImage--logo-mobile {
+    margin-top: 10px;
+    margin-left: -2rem;
+    max-height: 40px !important;
+    width: auto;
+}
+
 /* Barra de pesquisa */
 
 .autoCompleteOuterContainer--search-bar :global(.vtex-input-prefix__group) {
