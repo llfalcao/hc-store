@@ -24,6 +24,7 @@
     display: flex;
     justify-content: center;
     margin-left: 1rem;
+    max-width: 100%;
 }
 
 .logoImage {
@@ -109,6 +110,10 @@
 /* Newsletter */
 .label {
     color: #ffffff;
+}
+
+.newsletter {
+    background-color: #303030;
 }
 
 /* Inverter a cor dos ícones do rodapé */
